@@ -37,12 +37,12 @@ h1, h2{margin:0 auto;}
 .grad div{background:#efefef; height:98%;
 width:98%;}
 
-.grad, .brand{ margin:15px; 
+.grad, .brand{ margin:15px;
 font-size:1.25em; font-weight:700;}
 
 .grad:hover, .brand:hover{color:#303338; box-shadow: 5px 5px 15px rgba(0,0,0, .1);}
 
-.projects{margin:15px; margin-top:70px;}
+.projects{margin:15px; margin-top:100px;}
 
 .hint{-webkit-transition:1s;transition: 1s; border:solid 2px; width:230px;
 color:#efefef;}
@@ -54,7 +54,3 @@ h6{font-size:1em; margin:0 auto; font-weight:400; padding:5px;}
 p{font-weight:100; font-size:.8em; padding:5px; line-height:20px;}
 
 a{text-decoration:none; color:inherit;}
-
-
-
-
