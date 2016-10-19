@@ -44,17 +44,18 @@ a {
 *********************************/
 
 .top-nav {
-    background: #607d8b;
+    background: #81002b;
     color: #efefef;
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 12px 130px;
+    padding: 5px 130px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
 }
 .top-nav span,
 .top-nav {
     display: flex;
+    align-items:baseline;
     justify-content: space-between;
 }
 .top-nav * {
@@ -62,14 +63,15 @@ a {
     cursor: pointer;
 }
 i:hover,
-.top-nav h2:hover {
+.top-nav span:first-of-type:hover {
     color: white;
 }
-h2 {
+.top-nav h2 {
     font-weight: 300;
     font-size: 1.1em;
     margin: 0 auto;
 }
+
 /*********************************
        P R O J E C T S
 *********************************/
@@ -118,7 +120,7 @@ h2 {
 }
 .projects {
     margin: 15px;
-    margin-top: 150px;
+    margin-top: 130px;
     text-align: center;
 }
 h6 {
@@ -132,4 +134,14 @@ p {
     font-size: .8em;
     padding: 5px;
     line-height: 20px;
+}
+/*********************************
+    M E D I A  -   Q U E R Y
+*********************************/
+
+@media (max-width: 700px){
+  .top-nav{padding: 0; align-items:center;}
+  .top-nav h2, .top-nav p{padding:0; margin:0;}
+  .top-nav span:first-child{flex-direction:column;}
+
 }
