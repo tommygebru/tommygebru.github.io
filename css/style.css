@@ -57,6 +57,10 @@ body {
              T Y P O G R A P H Y
 **************************************************/
 
+a {
+    text-decoration: none;
+}
+
 p {
     line-height: 25px;
 }
