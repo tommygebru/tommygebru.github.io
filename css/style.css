@@ -4,7 +4,7 @@
 
 * {
     box-sizing: border-box;
-    /*  background: rgba(0, 0, 0, .2);*/
+    /*background: rgba(0, 0, 0, .2);*/
 }
 
 body {
@@ -13,12 +13,14 @@ body {
 
 .container {
     width: 100vw;
-    background: #e0e0e1;
+    background:white;
+    /*background: #e0e0e1;*/
 }
 
 .primary {
     mix-blend-mode: multiply;
     background: url(https://source.unsplash.com/collection/403555) no-repeat;
+    /*file:///Users/tommygebru/WEB/tommygebru.github.io/leaves_color.jpeg*/
     background-size: cover;
     min-height: 100vh;
     width: 50vw;
@@ -130,39 +132,14 @@ h1, h4 {
 }
 
 
-/*
-8
-8
-8
-8
-8
-8
-8
-8
-8
-8
-8
-8
-8
-8
-8
-8
-8
-8
-8
-8
-*/
 
+/********************************************
+		  M E D I A    Q U E R I E S 
+********************************************/
 @media screen and (max-width: 870px) {
-    /**************************
-  width of 870 & LESS
-**************************/
-    /* {
-                box-sizing: border-box;
-                background:rgba(0,0,0,.3);
-            }*/
+
     p, h1, h2, h3, h4, h5, h6 {
-        margin: 0px;
+        margin: 5px 0;
     }
     h1 {
         font-size: 3em;
@@ -175,7 +152,7 @@ h1, h4 {
         opacity: .35;
     }
     p {
-        line-height: 20px;
+        line-height: 25px;
     }
     .container {
         width: 100vw;
@@ -188,33 +165,33 @@ h1, h4 {
         display: none;
     }
     .secondary {
-        height: 100%;
-        width: 100%;
-        padding: 0 15%;
-        background: #efefef;
+        height: 100vw;
+        /*padding: 0 15%;
+        background: #efefef;*/
+        background:white;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
     }
+    .container{overflow-x:hidden;}
+    .container{overflow-y:scroll;}
 }
 
-@media screen and (max-width: 585px) {
-    h1, h4 {
-        font-size: 1.75em;
-        width: 100%;
-        margin: 0 auto;
+
+
+
+@media screen and (max-width: 600px) {
+ .container {
+        width: 100vw;
+        height: 100%;
+        background: url(https://source.unsplash.com/collection/403555) no-repeat;
+        background-size: cover;
+        padding: 15px;
     }
+ p, h2, h4{font-size:1rem; line-height:15px;}
+   h1{font-size:1.2em; margin:0; padding:0;}
 }
 
-@media screen and (max-width: 500px) {
-    .secondary {
-        padding: 0 5%;
-    }
-    h1 {
-        font-size: 1.75em;
-    }
-    h4 {
-        font-size: 1.25em;
-    }
-}
+
+
